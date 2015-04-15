@@ -1,0 +1,12 @@
+a,
+div,
+button,
+span,
+p,
+input,
+textarea {
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}

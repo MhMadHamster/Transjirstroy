@@ -1,0 +1,21 @@
+{
+  "name": "Transjirstroy",
+  "version": "0.0.1",
+  "authors": [
+    "Max <mhmad.hamster@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-1.11.1": "~2.1.3",
+    "bxSlider": "~4.2.3"
+  }
+}

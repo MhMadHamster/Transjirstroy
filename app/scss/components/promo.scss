@@ -1,0 +1,106 @@
+.promo-wrapper {
+    width: 100%;
+    background-color: $orange;
+    position: relative;
+}
+
+.bx-wrapper {
+    height: 100%;
+    border: none;
+    box-shadow: none;
+}
+
+.bx-viewport {
+    height: 100%;
+}
+
+.promo-slider {
+    background-color: $orange;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: absolute;
+
+    &__item {
+        height: 320px;
+        overflow: hidden;
+        background-color: $orange;
+
+        &-inner {
+            width: 1020px;
+            box-sizing: border-box;
+            padding: 0 40px;
+            margin: 0 auto;
+            height: 100%;
+            text-align: right;
+        }
+
+        .img-wrapper {
+            height: 100%;
+            display: inline-block;
+            width: 100px;
+            margin-right: 0;
+            margin-left: auto;
+            position: relative;
+            vertical-align: top;
+
+            & > img {
+                max-width: none;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+
+        .text-wrapper {
+            display: inline-block;
+            width: 320px;
+            vertical-align: top;
+            text-align: center;
+
+            .promo-item__name {
+                font-size: 30px;
+                font-family: 'pt_sansbold', Arial, "Helvetica Neue", Helvetica, sans-serif;
+                color: $black;
+                display: block;
+                font-weight: bold;
+                margin-top: 85px;
+            }
+
+            .promo-item__description {
+                display: block;
+                box-sizing: border-box;
+                padding: 0 40px;
+                font-size: 15px;
+                color: $black;
+                font-family: 'pt_sansitalic', Arial, "Helvetica Neue", Helvetica, sans-serif;
+            }
+        }
+    }
+}
+
+.promo-slider__button {
+    position: relative;
+    height: 0;
+    z-index: 10;
+
+    .slider-prev,
+    .slider-next {
+        position: absolute;
+        z-index: 10;
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: #f1f1f6;
+        top: -40px;
+    }
+
+    .slider-prev {
+        border-right: 1px solid #e3e3ea;
+        left: 605px;
+    }
+
+    .slider-next {
+        left: 656px;
+    }
+}
