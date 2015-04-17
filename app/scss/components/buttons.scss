@@ -1,0 +1,82 @@
+a {
+    color: $orange;
+    text-decoration: underline;
+    font-size: 14px;
+    font-family: 'PT Sans';
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    transition: all .3s;
+
+    &-medium {
+        background-color: $orange;
+        color: #191921;
+        min-width: 124px;
+        padding: 3px 15px 5px;
+        box-sizing: border-box;
+        border-radius: 15px;
+
+        &:hover {
+            background-color: #15141b;
+            color: #ffa800;
+        }
+
+        &:active {
+            background-color: $orange;
+            color: #191921;
+        }
+    }
+
+    &-large {
+        background-color: $orange;
+        color: #fff;
+        font-weight: 800;
+        min-width: 154px;
+        padding: 10.5px 15px;
+        box-sizing: border-box;
+        border-radius: 25px;
+
+        &:hover {
+            background-color: #15141b;
+            color: $orange;
+        }
+
+        &:active {
+            background-color: $orange;
+            color: #fff;
+        }
+    }
+}
+
+a.arrow-prev,
+a.arrow-next {
+    width: 50px;
+    display: inline-block;
+    height: 50px;
+    background-color: #f1f1f6;
+    position: relative;
+    transition: all .3s;
+
+    &:hover {
+        background-color: $orange;
+    }
+
+    & > span {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+}

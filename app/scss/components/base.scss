@@ -11,6 +11,17 @@ body {
     overflow: hidden;
 }
 
+.page-content {
+  background-color: #fff;
+  border-top: 1px solid  #f1f1f6;
+
+  &-inner {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 40px;
+  }
+}
+
 .container {
     width: 1020px;
     margin: 0 auto;
@@ -38,4 +49,43 @@ a {
 
 .italic {
   font-style: italic;
+}
+
+.to-left {
+  float: left;
+
+  &.img-wrapper {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+}
+
+.to-right {
+  float: right;
+
+  &.img-wrapper {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+.content-wrapper {
+  margin: 20px 0;
+
+  & > *:first-child {
+    margin-top: 0;
+  }
+
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+
+  & > p:first-of-type {
+    margin-top: 0;
+  }
+
+  & > p:last-of-type {
+    margin-bottom: 0;
+  }
 }

@@ -1,0 +1,47 @@
+.table,
+.table0,
+.table1 {
+    margin: 20px 0;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+
+    thead {
+        font-weight: bold;
+    }
+
+    tr > td {
+        padding: 10px 15px;
+    }
+
+    tr > td:not(:first-child) {
+        width: 218px;
+        box-sizing: border-box;
+    }
+}
+
+.table1 {
+
+    td {
+        border: 1px solid #000;
+        border-collapse: collapse;
+    }
+}
+
+.table {
+
+    thead > tr {
+        background-color: $orange;
+        color: #fefefe;
+    }
+
+    tbody > tr:nth-child(2n+1) {
+        background-color: #f2f1f5;
+    }
+
+    tr > td:not(:first-child) {
+        border-left: 1px solid rgba(0,0,0, .08);
+    }
+}
