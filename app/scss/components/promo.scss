@@ -8,6 +8,7 @@
     height: 100%;
     border: none;
     box-shadow: none;
+    z-index: 1;
 }
 
 .bx-viewport {
@@ -60,7 +61,8 @@
 
             .promo-item__name {
                 font-size: 30px;
-                font-family: 'pt_sansbold', Arial, "Helvetica Neue", Helvetica, sans-serif;
+                font-family: 'PT Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+                font-weight: bold;
                 color: $black;
                 display: block;
                 font-weight: bold;
@@ -69,11 +71,14 @@
 
             .promo-item__description {
                 display: block;
+                max-height: 135px;
+                overflow: hidden;
                 box-sizing: border-box;
                 padding: 0 40px;
                 font-size: 15px;
                 color: $black;
-                font-family: 'pt_sansitalic', Arial, "Helvetica Neue", Helvetica, sans-serif;
+                font-family: 'PT Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+                font-style: italic;
             }
         }
     }
@@ -93,6 +98,15 @@
         height: 50px;
         background-color: #f1f1f6;
         top: -40px;
+
+        & > .icon {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
     }
 
     .slider-prev {
@@ -101,6 +115,7 @@
     }
 
     .slider-next {
-        left: 656px;
+        border-left: 1px solid #e3e3ea;
+        left: 655px;
     }
 }

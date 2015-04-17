@@ -1,0 +1,41 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-arrow-m {
+    width: 27px;
+    height: 27px;
+    background-position: -9px -9px;
+}
+
+.sprite-arrow-sm {
+    width: 16px;
+    height: 16px;
+    background-position: -54px -9px;
+}
+
+.sprite-icon-mark {
+    width: 7px;
+    height: 11px;
+    background-position: -54px -43px;
+}
+
+.sprite-icon-phone {
+    width: 12px;
+    height: 12px;
+    background-position: -88px -9px;
+}
+
+.sprite-icon-search {
+    width: 22px;
+    height: 23px;
+    background-position: -79px -43px;
+}
+
+.sprite-promo-slider-arrow {
+    width: 11px;
+    height: 18px;
+    background-position: -9px -84px;
+}

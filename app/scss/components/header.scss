@@ -1,18 +1,20 @@
 .header {
     height: 200px;
     max-height: 200px;
+    background-color: $black;
     overflow: hidden;
 
     .bg-img-wrapper {
-        overflow: hidden;
-        height: 200px;
+        position: relative;
+        width: 1020px;
         margin: 0 auto;
-        position: absolute;
-        left: 0;
-        right: 0;
-        background-color: $black;
-        text-align: center;
-        z-index: 0;
+        z-index: 1;
+
+        & > img {
+            position: absolute;
+            top: 0;
+            left: -713px;
+        }
     }
 
     .header-inner {
@@ -21,12 +23,13 @@
         padding-right: 40px;
         box-sizing: border-box;
         position: relative;
-        z-index: 1;
+        z-index: 2;
     }
 
     .logo-wrapper {
         float: left;
         margin-top: 34px;
+        max-width: 400px;
 
         .logo {
             display: inline-block;
@@ -36,12 +39,12 @@
         .logo-text {
             display: inline-block;
             vertical-align: middle;
-            margin-left: 18px;
+            margin-left: 16px;
 
             & .logo-name {
-                font-size: 20px;
                 color: $white;
-                font-family: 'pt_sansbold';
+                font-family: 'PT Sans';
+                font-weight: bold;
                 display: block;
             }
 
@@ -49,7 +52,8 @@
                 display: block;
                 font-size: 16px;
                 color: $orange;
-                font-family: 'pt_sansbold', Arial, "Helvetica Neue", Helvetica, sans-serif;
+                font-family: 'PT Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+                font-weight: bold;
             }
         }
     }
@@ -58,32 +62,52 @@
         float: right;
         vertical-align: middle;
         margin-top: 63px;
+        max-width: 320px;
 
         &__item {
             text-align: right;
-            margin: 8px 0;
+            margin: 9px 0;
+            position: relative;
+
+            & > .icon {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                left: -19px;
+
+                &.icon-phone {
+                    left: -23px;
+                    top: 1px;
+                }
+            }
             
             .address {
                 font-size: 14px;
+                word-spacing: -1px;
                 color: $white;
-                font-family: 'pt_sansregular', Arial, "Helvetica Neue", Helvetica, sans-serif;
+                font-family: 'PT Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
             }
 
             .phone {
+                display: inline-block;
+                position: relative;
+                top: 2px;
                 font-size: 18px;
                 color: $white;
-                font-family: 'pt_sansbold', Arial, "Helvetica Neue", Helvetica, sans-serif;
+                font-family: 'PT Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+                font-weight: bold;
             }
 
             .feedback {
                 font-size: 12px;
                 color: #191921;
                 display: inline-block;
-                padding: 4px 16px;
+                padding: 4px 17px;
                 background: $orange;
                 border-radius: 15px;
                 text-decoration: none;
-                margin-left: 9px;
+                margin-left: 5px;
 
                 &:hover {
                     background: rgb(255,203,0); /* Old browsers */

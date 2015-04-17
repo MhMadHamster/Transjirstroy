@@ -1,0 +1,30 @@
+.partners {
+    background-color: #fff;
+
+    &-inner {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px 40px;
+        text-align: center;
+    }
+
+    &-header {
+        text-transform: uppercase;
+        display: block;
+        margin: 15px 0;
+    }
+
+    &-list {
+        margin: 4.5px 0;
+
+        &__item {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 29px;
+
+            &:nth-child(5n) {
+                margin-right: 0;
+            }
+        }
+    }
+}

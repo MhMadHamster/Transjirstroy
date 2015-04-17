@@ -3,11 +3,22 @@ body {
     padding: 0;
     background-color: $orange;
     font-family: 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    min-width: 1020px;
+}
+
+.page-wrapper {
+    width: 100%;
+    overflow: hidden;
 }
 
 .container {
     width: 1020px;
     margin: 0 auto;
+}
+
+a {
+  color: $orange;
+  text-decoration: underline;
 }
 
 .clearfix {
@@ -19,4 +30,12 @@ body {
   &:after {
     clear: both;
   }
+}
+
+.turn180 {
+  transform: rotate(180deg);
+}
+
+.italic {
+  font-style: italic;
 }

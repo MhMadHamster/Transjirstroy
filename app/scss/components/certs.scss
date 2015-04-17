@@ -1,0 +1,98 @@
+.certs {
+    background-color: #15141b;
+    position: relative;
+    padding: 20px 0;
+
+    &-bg {
+        width: 1080px;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+
+        & > img {
+            width: 220%;
+            height: 100%;
+            position: absolute;
+            left: -660px;
+            right: 0;
+        }
+    }
+}
+
+.certs-inner {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 40px;
+
+    .certs-header {
+        font-size: 23px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #fff;
+        display: block;
+        text-align: center;
+        margin: 15px 0 18px;
+    }
+}
+
+.certs-list {
+    position: relative;
+    width: 100%;
+    margin: 45px 0 30px;
+
+    &__item {
+        float: left;
+        vertical-align: top;
+        display: inline-block;
+        margin: 20px 0;
+        margin-right: 20px;
+        max-width: 300px;
+        text-align: left;
+        position: relative;
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        & > img {
+            float: left;
+            margin-right: 20px;
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .cert-info {
+            font-size: 14px;
+            font-style: italic;
+            color: #fff;
+            box-sizing: border-box;
+            display: block;
+            margin-bottom: 40px;
+        }
+
+        .cert-link {
+            display: block;
+            position: absolute;
+            font-size: 13px;
+            color: $orange;
+            text-decoration: none;
+            bottom: 20px;
+            left: 127px;
+
+            & .icon {
+                display: inline-block;
+                vertical-align: middle;
+                position: relative;
+                bottom: 2px;
+                margin-left: 5px;
+            }
+        }
+    }
+}

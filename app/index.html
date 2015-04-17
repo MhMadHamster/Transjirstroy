@@ -2,9 +2,18 @@
 <html lang="ru">
 <head>
 
+    <meta charset="utf-8">
+    <meta name="robots" content="{if $page.noindex}none{else}all{/if}">
+    <meta name="description" content="{$page.description}">
+    <meta name="keywords" content="{$page.keywords}">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    
     <!-- build:css css/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bxSlider/dist/jquery.bxslider.css" />
+    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -12,11 +21,6 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <!-- endbuild -->
 
-    <meta charset="utf-8">
-    <meta name="robots" content="{if $page.noindex}none{else}all{/if}">
-    <meta name="description" content="{$page.description}">
-    <meta name="keywords" content="{$page.keywords}">
-    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
     <title>{$page.title}</title>
 
 </head>
@@ -65,7 +69,7 @@
                         <div class="contacts__item">
                             
                             <span class="icon icon-mark"></span>
-                            <span class="address">г. Москва,Архангельский переулок, 8/2, стр. 1</span>
+                            <span class="address">г. Москва, Архангельский переулок, 8/2, стр. 1</span>
 
                         </div>
                         <!-- [-] .contacts__item -->
@@ -131,6 +135,11 @@
                     <!-- [+] .search -->
                     <div class="search">
                         
+                        <form action="#">
+                            <button type="submit" class="search-button icon icon-search"></button>
+                            <input type="text" class="search-input" placeholder="поиск">
+                        </form>
+
                     </div>
                     <!-- [-] .search -->
 
@@ -183,16 +192,12 @@
                     <!-- [+] .promo-slider__item-inner -->
                     <div class="promo-slider__item-inner">
 
-                        <!-- [+] .img-wrapper -->
                         <div class="img-wrapper"> <img src="files/promo-image-2.jpg" height="320" width="960" alt=""> </div>
-                        <!-- [-] .img-wrapper -->
 
-                        <!-- [+] .text-wrapper -->
                         <div class="text-wrapper">
                             <span class="promo-item__name">Зябликово</span>
                             <span class="promo-item__description">— пересадочная станция Люблинско-Дмитровской линии Московского метрополитена. Открыта 2 декабря 2011 года в составе участка «Марьино» — «Зябликово».</span>
                         </div>
-                        <!-- [-] .text-wrapper -->
 
                     </div>
                     <!-- [-] .promo-slider__item-inner -->
@@ -200,22 +205,19 @@
                 </li>
                 <!-- [-] .promo-slider__item -->
 
+
                 <!-- [+] .promo-slider__item -->
                 <li class="promo-slider__item">
                     
                     <!-- [+] .promo-slider__item-inner -->
                     <div class="promo-slider__item-inner">
 
-                        <!-- [+] .img-wrapper -->
                         <div class="img-wrapper"> <img src="files/promo-image.jpg" alt=""> </div>
-                        <!-- [-] .img-wrapper -->
 
-                        <!-- [+] .text-wrapper -->
                         <div class="text-wrapper">
                             <span class="promo-item__name">Зябликово</span>
                             <span class="promo-item__description">— пересадочная станция Люблинско-Дмитровской линии Московского метрополитена. Открыта 2 декабря 2011 года в составе участка «Марьино» — «Зябликово».</span>
                         </div>
-                        <!-- [-] .text-wrapper -->
 
                     </div>
                     <!-- [-] .promo-slider__item-inner -->
@@ -223,22 +225,19 @@
                 </li>
                 <!-- [-] .promo-slider__item -->
 
+
                 <!-- [+] .promo-slider__item -->
                 <li class="promo-slider__item">
                     
                     <!-- [+] .promo-slider__item-inner -->
                     <div class="promo-slider__item-inner">
 
-                        <!-- [+] .img-wrapper -->
                         <div class="img-wrapper"> <img src="files/promo-image-2.jpg" height="320" width="960" alt=""> </div>
-                        <!-- [-] .img-wrapper -->
 
-                        <!-- [+] .text-wrapper -->
                         <div class="text-wrapper">
                             <span class="promo-item__name">Зябликово</span>
                             <span class="promo-item__description">— пересадочная станция Люблинско-Дмитровской линии Московского метрополитена. Открыта 2 декабря 2011 года в составе участка «Марьино» — «Зябликово».</span>
                         </div>
-                        <!-- [-] .text-wrapper -->
 
                     </div>
                     <!-- [-] .promo-slider__item-inner -->
@@ -256,8 +255,8 @@
                 
                 <!-- [+] .promo-slider__button -->
                 <div class="promo-slider__button">
-                    <a href="" class="slider-prev"></a>
-                    <a href="" class="slider-next"></a>
+                    <a href="" class="slider-prev"><span class="icon icon-promo-arrow"></span></a>
+                    <a href="" class="slider-next"><span class="icon icon-promo-arrow turn180"></span></a>
                 </div>
                 <!-- [-] .promo-slider__button -->
 
@@ -267,6 +266,511 @@
 
         </div>
         <!-- [-] .promo-wrapper -->
+
+
+        <!-- [+] .about -->
+        <div class="about">
+
+
+            <!-- [+] .container -->
+            <div class="container">
+
+                <!-- [+] .about-inner -->
+                <div class="about-inner">
+
+                    <!-- [+] .block-list -->
+                    <div class="block-list">
+                    
+                        <div class="block-list__header">
+                            <h1 class="h1">ОАО «ТРАНСИНЖСТРОЙ»</h1>
+                        </div>
+                    
+                        <a href="" class="more-info">Узнать больше</a>
+                    
+                        <p class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae officia eveniet neque rerum iure facere iusto fuga incidunt blanditiis dicta, natus porro minima autem nemo illum reprehenderit dolore dolorum eius error pariatur! Laboriosam adipisci cum sed magnam at dignissimos nulla soluta, aspernatur reprehenderit architecto, ipsum, velit magni ratione eveniet illo.</p>
+                        
+                        <p class="text-block">Dolores et incidunt blanditiis beatae possimus, officiis corrupti assumenda magni culpa quia, quisquam inventore dolorem, deleniti atque consequuntur modi commodi aliquid cumque animi esse. Similique illum eos, ullam eveniet quibusdam odit, facere quo assumenda itaque dicta placeat labore doloremque excepturi. Blanditiis sint obcaecati, quis quidem, accusamus pariatur esse similique nisi.</p>
+                    
+                        <div class="block-list__corner"></div>
+
+                    </div>
+                    <!-- [-] .block-list -->
+
+                </div>
+                <!-- [-] .about-inner -->
+
+            </div>
+            <!-- [-] .container -->
+
+
+            <div class="side-image">
+                <img src="files/kaska.png" height="485" width="442" alt="">
+            </div>
+
+
+        </div>
+        <!-- [-] .about -->
+
+
+        <!-- [+] .activity -->
+        <div class="activity">
+
+            <div class="bg-image">
+                <img src="images/activity-bg.jpg" height="390" width="2500" alt="">
+            </div>
+
+            <!-- [+] .container -->
+            <div class="container">
+
+                <!-- [+] .activity-inner -->
+                <div class="activity-inner">
+                    
+                    <h2 class="activity-header">Направление деятельности</h2>
+
+                    <div class="more-info">Смотреть все</div>
+
+                    <p class="text-block italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae minima ad odio ipsam saepe, eum nihil et quia? Officiis itaque eius totam cupiditate eos impedit sit, ab quos optio odio?</p>
+
+
+                    <!-- [+] .activity-list -->
+                    <div class="activity-list">
+
+                        <!-- [+] .activity-list__item -->
+                        <div class="activity-list__item">
+
+                            <div class="img-wrapper">
+                                <img src="files/content-image.jpg" height="155" width="232" alt="">
+                            </div>
+
+                            <div class="activity-popup">
+                                <p class="text-block italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate accusantium ex quas corporis nemo, modi.</p>
+                                <a href="" class="icon icon-arrow-m"></a>
+                            </div>
+
+                        </div>
+                        <!-- [-] .activity-list__item -->
+
+
+                       <!-- [+] .activity-list__item -->
+                        <div class="activity-list__item">
+
+                            <div class="img-wrapper">
+                                <img src="files/content-image.jpg" height="155" width="232" alt="">
+                            </div>
+
+                            <div class="activity-popup">
+                                <p class="text-block italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate accusantium ex quas corporis nemo, modi.</p>
+                                <a href="" class="icon icon-arrow-m"></a>
+                            </div>
+
+                        </div>
+                        <!-- [-] .activity-list__item -->
+
+
+                        <!-- [+] .activity-list__item -->
+                        <div class="activity-list__item">
+
+                            <div class="img-wrapper">
+                                <img src="files/content-image.jpg" height="155" width="232" alt="">
+                            </div>
+
+                            <div class="activity-popup">
+                                <p class="text-block italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate accusantium ex quas corporis nemo, modi.</p>
+                                <a href="" class="icon icon-arrow-m"></a>
+                            </div>
+
+                        </div>
+                        <!-- [-] .activity-list__item -->
+ 
+
+                        <!-- [+] .activity-list__item -->
+                        <div class="activity-list__item">
+
+                            <div class="img-wrapper">
+                                <img src="files/content-image.jpg" height="155" width="232" alt="">
+                            </div>
+
+                            <div class="activity-popup">
+                                <p class="text-block italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate accusantium ex quas corporis nemo, modi.</p>
+                                <a href="" class="icon icon-arrow-m"></a>
+                            </div>
+
+                        </div>
+                        <!-- [-] .activity-list__item -->
+
+
+                    </div>
+                    <!-- [-] .activity-list -->
+
+
+                </div>
+                <!-- [-] .activity-inner -->
+
+            </div>
+            <!-- [-] .container -->
+
+
+        </div>
+        <!-- [-] .activity -->
+
+
+        <!-- [+] .info-block -->
+        <div class="info-block">
+
+            <!-- [+] .container -->
+            <div class="container">
+
+                <!-- [+] .info-block-inner -->
+                <div class="info-block-inner clearfix">
+
+
+                    <!-- [+] .personal -->
+                    <div class="personal">
+                        
+                        <!-- [+] .block-list -->
+                        <div class="block-list">
+
+                            <div class="block-list__header">
+                                <span>Ответственность в лицах</span>
+                            </div>
+
+                            <a href="" class="more-info">Узнать больше</a>
+
+
+                            <!-- [+] .personal-list -->
+                            <div class="personal-list">
+
+                                <!-- [+] .presonal-list__item -->
+                                <div class="personal-list__item clearfix active" id="person-1">
+
+                                    <div class="img-wrapper">
+                                        <img src="files/photo-1.jpg" height="213" width="170" alt="">
+                                        <div class="persona-info">
+                                            <span class="post">Название должности</span>
+                                            <span class="name">Фамилия Имя Отчество</span>
+                                        </div>
+                                    </div>
+
+                                    <span class="head">Lorem ipsum dolor sit amet.</span>
+                                    <p class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam facere quod, ratione dignissimos ipsam et maxime impedit molestiae ea provident nobis corporis minima odio quo nam accusamus sunt at, obcaecati itaque suscipit. Magnam quaerat explicabo dicta suscipit iste vitae, architecto adipisci et dolore quisquam aspernatur consequuntur similique officia sed fugiat.</p>
+
+                                </div>
+                                <!-- [-] .presonal-list__item -->
+
+                                <!-- [+] .presonal-list__item -->
+                                <div class="personal-list__item clearfix" id="person-2">
+
+                                    <div class="img-wrapper">
+                                        <img src="files/photo-2.jpg" height="213" width="170" alt="">
+                                        <div class="persona-info">
+                                            <span class="post">Название должности</span>
+                                            <span class="name">Фамилия Имя Отчество</span>
+                                        </div>
+                                    </div>
+
+                                    <span class="head">Lorem ipsum dolor sit amet.</span>
+                                    <p class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eveniet dolorem repudiandae vitae, exercitationem a, non rem sed libero saepe cupiditate aperiam nobis. Accusamus sapiente autem veritatis, cupiditate, rem obcaecati. Consequuntur aut in minima cupiditate sapiente, odio quis nam, voluptates, vero a nobis sit velit, voluptatibus officiis ea vel culpa.</p>
+
+                                </div>
+                                <!-- [-] .presonal-list__item -->
+
+                                <!-- [+] .presonal-list__item -->
+                                <div class="personal-list__item clearfix" id="person-3">
+
+                                    <div class="img-wrapper">
+                                        <img src="files/photo-1.jpg" height="213" width="170" alt="">
+                                        <div class="persona-info">
+                                            <span class="post">Название должности</span>
+                                            <span class="name">Фамилия Имя Отчество</span>
+                                        </div>
+                                    </div>
+
+                                    <span class="head">Lorem ipsum dolor sit amet.</span>
+                                    <p class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum veritatis iste voluptate in sint libero rerum suscipit sunt repellat repellendus, quis expedita laudantium enim aliquid dolorem fuga! Et quidem, reprehenderit dolores. Reiciendis provident neque officiis non, ea laboriosam. Optio quam eos laboriosam, quaerat expedita repellendus quibusdam minus facere, sequi quia!</p>
+
+                                </div>
+                                <!-- [-] .presonal-list__item -->
+
+                                <!-- [+] .presonal-list__item -->
+                                <div class="personal-list__item clearfix" id="person-4">
+
+                                    <div class="img-wrapper">
+                                        <img src="files/photo-2.jpg" height="213" width="170" alt="">
+                                        <div class="persona-info">
+                                            <span class="post">Название должности</span>
+                                            <span class="name">Фамилия Имя Отчество</span>
+                                        </div>
+                                    </div>
+
+                                    <span class="head">Lorem ipsum dolor sit amet.</span>
+                                    <p class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis natus laboriosam temporibus. Autem delectus odio sapiente obcaecati ipsam quaerat veniam totam, officiis ullam minima numquam quia, consequuntur recusandae deleniti provident similique perferendis id temporibus, molestiae magni quos. Exercitationem accusantium accusamus blanditiis nemo quia est adipisci saepe, cum similique sequi ipsa.</p>
+
+                                </div>
+                                <!-- [-] .presonal-list__item -->
+
+
+                                <!-- [+] .thumb-list -->
+                                <div class="thumb-list clearfix">
+
+                                    <a class="thumb-list__item active" href="#person-1">
+                                        <div class="img-wrapper">
+                                            <img src="files/photo-1.jpg" height="213" width="170" alt="">
+                                        </div>
+                                    </a>
+
+                                    <a class="thumb-list__item" href="#person-2">
+                                        <div class="img-wrapper">
+                                            <img src="files/photo-2-thumb.jpg" height="100" width="117" alt="">
+                                        </div>
+                                    </a>
+
+                                    <a class="thumb-list__item" href="#person-3">
+                                        <div class="img-wrapper">
+                                            <img src="files/photo-1.jpg" height="213" width="170" alt="">
+                                        </div>
+                                    </a>
+
+                                    <a class="thumb-list__item" href="#person-4">
+                                        <div class="img-wrapper">
+                                            <img src="files/photo-2-thumb.jpg" height="100" width="117" alt="">
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <!-- [-] .thumb-list -->
+
+
+                            </div>
+                            <!-- [-] .personal-list -->
+
+
+                            <div class="block-list__corner"></div>
+
+                        </div>
+                        <!-- [-] .block-list -->
+
+                    </div>
+                    <!-- [-] .personal -->
+
+
+                    <!-- [+] .news -->
+                    <div class="news">
+                        
+                        <div class="news-header">
+                            <span>Информация для акционеров</span>
+                        </div>
+
+                        <a href="" class="more-info">Читать все</a>
+
+                        <!-- [+] .news__item -->
+                        <div class="news__item">
+                            <span class="news-date">24.02<br><span>2015</span></span>
+                            <span class="news-head">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+                            <p class="text-block italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, necessitatibus. Quidem quae suscipit placeat laboriosam saepe cum, officiis exercitationem provident dignissimos. Suscipit, repellendus vitae vel?</p>
+                            <div class="link-wrapper">
+                                <a href="" class="news-link">Читать далее <span class="icon icon-arrow-sm"></span></a>
+                            </div>
+                        </div>
+                        <!-- [-] .news__item -->
+
+                        <!-- [+] .news__item -->
+                        <div class="news__item">
+                            <span class="news-date">24.02<br><span>2015</span></span>
+                            <span class="news-head">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+                            <p class="text-block italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ea quae atque, labore deserunt nostrum amet voluptate nulla doloribus! Rem tempora saepe totam mollitia accusamus.</p>
+                            <div class="link-wrapper">
+                                <a href="" class="news-link">Читать далее <span class="icon icon-arrow-sm"></span></a>
+                            </div>
+                        </div>
+                        <!-- [-] .news__item -->
+
+                    </div>
+                    <!-- [-] .news -->
+
+
+                </div>
+                <!-- [-] .info-block-inner -->
+
+            </div>
+            <!-- [-] .container -->
+
+            <div class="info-block-bg">
+                <img src="images/info-bg.jpg" height="1033" width="1033" alt="">
+            </div>
+
+        </div>
+        <!-- [-] .info-block -->
+
+
+        <!-- [+] .certs -->
+        <div class="certs">
+
+            <!-- [+] .container -->
+            <div class="container">
+
+                <!-- [+] .certs-inner -->
+                <div class="certs-inner">
+
+                    <span class="certs-header">Сертификаты и лицензии</span>
+
+                    <a href="" class="more-info">Смотреть все</a>
+
+                    <!-- [+] .certs-list -->
+                    <div class="certs-list clearfix">
+
+                        <!-- [+] .certs-list__item clearfix -->
+                        <div class="certs-list__item clearfix">
+                            <img src="files/cert-1.jpg" height="133" width="107" alt="">
+                            <span class="cert-info">Сертификат соответствия требованиям ГОСТ Р ИСО 9001-2008</span>
+                            <a href="" class="cert-link">Узнать больше<span class="icon icon-arrow-sm"></span></a>
+                        </div>
+                        <!-- [-] .certs-list__item clearfix -->
+
+                        <!-- [+] .certs-list__item clearfix -->
+                        <div class="certs-list__item clearfix">
+                            <img src="files/cert-1.jpg" height="133" width="107" alt="">
+                            <span class="cert-info">Сертификат соответствия требованиям ГОСТ Р ИСО 9001-2008</span>
+                            <a href="" class="cert-link">Узнать больше<span class="icon icon-arrow-sm"></span></a>
+                        </div>
+                        <!-- [-] .certs-list__item clearfix -->
+
+                        <!-- [+] .certs-list__item clearfix -->
+                        <div class="certs-list__item clearfix">
+                            <img src="files/cert-1.jpg" height="133" width="107" alt="">
+                            <span class="cert-info">Свидетельство об аттестации № 60А010685 лаборатории неразрушающего контроля</span>
+                            <a href="" class="cert-link">Узнать больше<span class="icon icon-arrow-sm"></span></a>
+                        </div>
+                        <!-- [-] .certs-list__item clearfix -->
+
+                    </div>
+                    <!-- [-] .certs-list -->
+
+                </div>
+                <!-- [-] .certs-inner -->
+
+            </div>
+            <!-- [-] .container -->
+
+            <div class="certs-bg">
+                <img src="images/certs-bg.jpg" height="390" width="2500" alt="">
+            </div>
+
+        </div>
+        <!-- [-] .certs -->
+
+
+        <!-- [+] .partners -->
+        <div class="partners">
+
+            <!-- [+] .container -->
+            <div class="container">
+
+                <!-- [+] .partners-inner -->
+                <div class="partners-inner">
+
+                    <h4 class="partners-header h1">Наши клиенты и партнеры</h4>
+
+                    <a href="" class="more-info">Смотреть все</a>
+
+                    <!-- [+] .parners-list -->
+                    <div class="partners-list">
+                        
+                        <div class="partners-list__item">
+                            <img src="files/partner-1.png" alt="">
+                        </div>
+                        
+                        <div class="partners-list__item">
+                            <img src="files/partner-2.png" alt="">
+                        </div>
+                        
+                        <div class="partners-list__item">
+                            <img src="files/partner-3.png" alt="">
+                        </div>
+                        
+                        <div class="partners-list__item">
+                            <img src="files/partner-4.png" alt="">
+                        </div>
+                        
+                        <div class="partners-list__item">
+                            <img src="files/partner-5.png" alt="">
+                        </div>
+
+                    </div>
+                    <!-- [-] .parners-list -->
+
+                </div>
+                <!-- [-] .partners-inner -->
+
+            </div>
+            <!-- [-] .container -->
+
+        </div>
+        <!-- [-] .partners -->
+
+
+        <!-- [+] .sup-footer -->
+        <div class="sup-footer">
+
+            <!-- [+] .container -->
+            <div class="container">
+
+                <!-- [+] .sup-footer-inner -->
+                <div class="sup-footer-inner">
+
+                    <!-- [+] .bott-menu -->
+                    <ul class="bott-menu">
+
+                        <li class="bott-menu__item"> <a href="">О компании</a> </li>
+
+                        <li class="bott-menu__item"> <a href="">Направление деятельности</a> </li>
+
+                        <li class="bott-menu__item"> <a href="">Наши проекты</a> </li>
+
+                        <li class="bott-menu__item"> <a href="">Вакансии</a> </li>
+
+                        <li class="bott-menu__item"> <a href="">Контакты</a> </li>
+
+                    </ul>
+                    <!-- [-] .bott-menu -->
+
+                </div>
+                <!-- [-] .sup-footer-inner -->
+
+            </div>
+            <!-- [-] .container -->
+
+        </div>
+        <!-- [-] .sup-footer -->
+
+
+        <!-- [+] .footer -->
+        <footer class="footer">
+
+            <!-- [+] .container -->
+            <div class="container">
+
+                <!-- [+] .footer-inner -->
+                <div class="footer-inner clearfix">
+
+                    <!-- [+] .copyright -->
+                    <div class="copyright">
+                        <span class="copy-owner">Copyright © 2012-2015  ОАО "Трансинжстрой"</span>
+                        <span class="mega-link">Создание сайта <a href="http://www.exclusive.megagroup.ru">exclusive.megagoup.ru</a></span>
+                    </div>
+                    <!-- [-] .copyright -->
+
+                    <div class="stat">
+                        <img src="files/stat.png" alt="">
+                    </div>
+
+                </div>
+                <!-- [-] .footer-inner -->
+
+            </div>
+            <!-- [-] .container -->
+
+        </footer>
+        <!-- [-] .footer -->
 
 
     </div>
@@ -287,8 +791,8 @@
     <!-- endbuild -->
 
 
-</body>
+    <!-- B.M. id-1054 -->
 
-<!-- B.M. id-1054 -->
+</body>
 
 </html>
