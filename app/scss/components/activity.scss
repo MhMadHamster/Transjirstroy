@@ -41,16 +41,16 @@
     margin: 15px 0 25px 0;
     display: table;
     width: 100%;
-    font-size: 0;
+    letter-spacing: -5px;
 
     &__item {
         width: 25%;
+        letter-spacing: normal;
         vertical-align: top;
         display: inline-block;
         position: relative;
         box-sizing: border-box;
         padding: 0 3px;
-        font-size: 14px;
 
         &:hover {
             .activity-popup {

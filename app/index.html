@@ -14,6 +14,7 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bxSlider/dist/jquery.bxslider.css" />
     <link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="bower_components/jquery.form-styler/jquery.formstyler.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -79,7 +80,7 @@
                             
                             <span class="icon icon-phone"></span>
                             <span class="phone">8 (495) 625 63 45</span>
-                            <a href="" class="feedback">Обратная связь</a>
+                            <a href="" class="more-info feedback">Обратная связь</a>
 
                         </div>
                         <!-- [-] .contacts__item -->
@@ -133,7 +134,7 @@
                     <!-- [-] .nav -->
 
                     <!-- [+] .search -->
-                    <div class="search">
+                    <div class="search to-right">
                         
                         <form action="#">
                             <button type="submit" class="search-button icon icon-search"></button>
@@ -255,8 +256,14 @@
                 
                 <!-- [+] .promo-slider__button -->
                 <div class="promo-slider__button">
-                    <a href="" class="slider-prev"><span class="icon icon-promo-arrow"></span></a>
-                    <a href="" class="slider-next"><span class="icon icon-promo-arrow turn180"></span></a>
+
+                    <!-- [+] .nav-arrows -->
+                    <div class="nav-arrows">
+                        <a href="" class="arrow-prev js-slider-prev"><span class="icon icon-promo-arrow"></span></a>
+                        <a href="" class="arrow-next js-slider-next"><span class="icon icon-promo-arrow turn180"></span></a>
+                    </div>
+                    <!-- [-] .nav-arrows -->
+
                 </div>
                 <!-- [-] .promo-slider__button -->
 
@@ -287,9 +294,9 @@
                     
                         <a href="" class="more-info">Узнать больше</a>
                     
-                        <p class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae officia eveniet neque rerum iure facere iusto fuga incidunt blanditiis dicta, natus porro minima autem nemo illum reprehenderit dolore dolorum eius error pariatur! Laboriosam adipisci cum sed magnam at dignissimos nulla soluta, aspernatur reprehenderit architecto, ipsum, velit magni ratione eveniet illo.</p>
+                        <div class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae officia eveniet neque rerum iure facere iusto fuga incidunt blanditiis dicta, natus porro minima autem nemo illum reprehenderit dolore dolorum eius error pariatur! Laboriosam adipisci cum sed magnam at dignissimos nulla soluta, aspernatur reprehenderit architecto, ipsum, velit magni ratione eveniet illo.</div>
                         
-                        <p class="text-block">Dolores et incidunt blanditiis beatae possimus, officiis corrupti assumenda magni culpa quia, quisquam inventore dolorem, deleniti atque consequuntur modi commodi aliquid cumque animi esse. Similique illum eos, ullam eveniet quibusdam odit, facere quo assumenda itaque dicta placeat labore doloremque excepturi. Blanditiis sint obcaecati, quis quidem, accusamus pariatur esse similique nisi.</p>
+                        <div class="text-block">Dolores et incidunt blanditiis beatae possimus, officiis corrupti assumenda magni culpa quia, quisquam inventore dolorem, deleniti atque consequuntur modi commodi aliquid cumque animi esse. Similique illum eos, ullam eveniet quibusdam odit, facere quo assumenda itaque dicta placeat labore doloremque excepturi. Blanditiis sint obcaecati, quis quidem, accusamus pariatur esse similique nisi.</div>
                     
                         <div class="block-list__corner"></div>
 
@@ -329,7 +336,7 @@
 
                     <div class="more-info">Смотреть все</div>
 
-                    <p class="text-block italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae minima ad odio ipsam saepe, eum nihil et quia? Officiis itaque eius totam cupiditate eos impedit sit, ab quos optio odio?</p>
+                    <div class="text-block italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae minima ad odio ipsam saepe, eum nihil et quia? Officiis itaque eius totam cupiditate eos impedit sit, ab quos optio odio?</div>
 
 
                     <!-- [+] .activity-list -->
@@ -343,7 +350,7 @@
                             </div>
 
                             <div class="activity-popup">
-                                <p class="text-block italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate accusantium ex quas corporis nemo, modi.</p>
+                                <div class="text-block italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate accusantium ex quas corporis nemo, modi.</div>
                                 <a href="" class="icon icon-arrow-m"></a>
                             </div>
 
@@ -359,7 +366,7 @@
                             </div>
 
                             <div class="activity-popup">
-                                <p class="text-block italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate accusantium ex quas corporis nemo, modi.</p>
+                                <div class="text-block italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate accusantium ex quas corporis nemo, modi.</div>
                                 <a href="" class="icon icon-arrow-m"></a>
                             </div>
 
@@ -375,7 +382,7 @@
                             </div>
 
                             <div class="activity-popup">
-                                <p class="text-block italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate accusantium ex quas corporis nemo, modi.</p>
+                                <div class="text-block italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate accusantium ex quas corporis nemo, modi.</div>
                                 <a href="" class="icon icon-arrow-m"></a>
                             </div>
 
@@ -391,7 +398,7 @@
                             </div>
 
                             <div class="activity-popup">
-                                <p class="text-block italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate accusantium ex quas corporis nemo, modi.</p>
+                                <div class="text-block italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate accusantium ex quas corporis nemo, modi.</div>
                                 <a href="" class="icon icon-arrow-m"></a>
                             </div>
 
@@ -452,7 +459,7 @@
                                     </div>
 
                                     <span class="head">Lorem ipsum dolor sit amet.</span>
-                                    <p class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam facere quod, ratione dignissimos ipsam et maxime impedit molestiae ea provident nobis corporis minima odio quo nam accusamus sunt at, obcaecati itaque suscipit. Magnam quaerat explicabo dicta suscipit iste vitae, architecto adipisci et dolore quisquam aspernatur consequuntur similique officia sed fugiat.</p>
+                                    <div class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam facere quod, ratione dignissimos ipsam et maxime impedit molestiae ea provident nobis corporis minima odio quo nam accusamus sunt at, obcaecati itaque suscipit. Magnam quaerat explicabo dicta suscipit iste vitae, architecto adipisci et dolore quisquam aspernatur consequuntur similique officia sed fugiat.</div>
 
                                 </div>
                                 <!-- [-] .presonal-list__item -->
@@ -469,7 +476,7 @@
                                     </div>
 
                                     <span class="head">Lorem ipsum dolor sit amet.</span>
-                                    <p class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eveniet dolorem repudiandae vitae, exercitationem a, non rem sed libero saepe cupiditate aperiam nobis. Accusamus sapiente autem veritatis, cupiditate, rem obcaecati. Consequuntur aut in minima cupiditate sapiente, odio quis nam, voluptates, vero a nobis sit velit, voluptatibus officiis ea vel culpa.</p>
+                                    <div class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eveniet dolorem repudiandae vitae, exercitationem a, non rem sed libero saepe cupiditate aperiam nobis. Accusamus sapiente autem veritatis, cupiditate, rem obcaecati. Consequuntur aut in minima cupiditate sapiente, odio quis nam, voluptates, vero a nobis sit velit, voluptatibus officiis ea vel culpa.</div>
 
                                 </div>
                                 <!-- [-] .presonal-list__item -->
@@ -486,7 +493,7 @@
                                     </div>
 
                                     <span class="head">Lorem ipsum dolor sit amet.</span>
-                                    <p class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum veritatis iste voluptate in sint libero rerum suscipit sunt repellat repellendus, quis expedita laudantium enim aliquid dolorem fuga! Et quidem, reprehenderit dolores. Reiciendis provident neque officiis non, ea laboriosam. Optio quam eos laboriosam, quaerat expedita repellendus quibusdam minus facere, sequi quia!</p>
+                                    <div class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum veritatis iste voluptate in sint libero rerum suscipit sunt repellat repellendus, quis expedita laudantium enim aliquid dolorem fuga! Et quidem, reprehenderit dolores. Reiciendis provident neque officiis non, ea laboriosam. Optio quam eos laboriosam, quaerat expedita repellendus quibusdam minus facere, sequi quia!</div>
 
                                 </div>
                                 <!-- [-] .presonal-list__item -->
@@ -503,7 +510,7 @@
                                     </div>
 
                                     <span class="head">Lorem ipsum dolor sit amet.</span>
-                                    <p class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis natus laboriosam temporibus. Autem delectus odio sapiente obcaecati ipsam quaerat veniam totam, officiis ullam minima numquam quia, consequuntur recusandae deleniti provident similique perferendis id temporibus, molestiae magni quos. Exercitationem accusantium accusamus blanditiis nemo quia est adipisci saepe, cum similique sequi ipsa.</p>
+                                    <div class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis natus laboriosam temporibus. Autem delectus odio sapiente obcaecati ipsam quaerat veniam totam, officiis ullam minima numquam quia, consequuntur recusandae deleniti provident similique perferendis id temporibus, molestiae magni quos. Exercitationem accusantium accusamus blanditiis nemo quia est adipisci saepe, cum similique sequi ipsa.</div>
 
                                 </div>
                                 <!-- [-] .presonal-list__item -->
@@ -566,7 +573,7 @@
                         <div class="news__item">
                             <span class="news-date">24.02<br><span>2015</span></span>
                             <span class="news-head">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
-                            <p class="text-block italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, necessitatibus. Quidem quae suscipit placeat laboriosam saepe cum, officiis exercitationem provident dignissimos. Suscipit, repellendus vitae vel?</p>
+                            <div class="text-block italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, necessitatibus. Quidem quae suscipit placeat laboriosam saepe cum, officiis exercitationem provident dignissimos. Suscipit, repellendus vitae vel?</div>
                             <div class="link-wrapper">
                                 <a href="" class="news-link">Читать далее <span class="icon icon-arrow-sm"></span></a>
                             </div>
@@ -577,7 +584,7 @@
                         <div class="news__item">
                             <span class="news-date">24.02<br><span>2015</span></span>
                             <span class="news-head">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
-                            <p class="text-block italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ea quae atque, labore deserunt nostrum amet voluptate nulla doloribus! Rem tempora saepe totam mollitia accusamus.</p>
+                            <div class="text-block italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ea quae atque, labore deserunt nostrum amet voluptate nulla doloribus! Rem tempora saepe totam mollitia accusamus.</div>
                             <div class="link-wrapper">
                                 <a href="" class="news-link">Читать далее <span class="icon icon-arrow-sm"></span></a>
                             </div>
@@ -783,6 +790,7 @@
     <script src="bower_components/jquery-1.11.1/dist/jquery.js"></script>
     <script src="bower_components/bxSlider/dist/jquery.bxslider.js"></script>
     <script src="bower_components/bxSlider/dist/jquery.bxslider.min.js"></script>
+    <script src="bower_components/jquery.form-styler/jquery.formstyler.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

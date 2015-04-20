@@ -6,12 +6,12 @@ $(document).ready(function() {
                         controls: false
                     });
 
-    $('.slider-prev').on('click', function(e) {
+    $('.js-slider-prev').on('click', function(e) {
         e.preventDefault();
         slider.goToPrevSlide();
     })
 
-    $('.slider-next').on('click', function(e) {
+    $('.js-slider-next').on('click', function(e) {
         e.preventDefault();
         slider.goToNextSlide();
     })
@@ -40,6 +40,21 @@ $(document).ready(function() {
                    });
         }
 
+    });
+
+    setTimeout(function() {
+        $('input, select').styler();
+    }, 100);
+
+
+    // Search form
+    $('.search-input').focus(function() {
+        $(this).attr('placeholder', 'Введите слово').closest('.search').addClass('active');
+    });
+
+    $('.search-input').focusout(function() {
+        $(this).attr('placeholder', 'поиск').closest('.search').removeClass('active');
+        $(this).val('');
     });
 
 })

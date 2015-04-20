@@ -14,6 +14,7 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bxSlider/dist/jquery.bxslider.css" />
     <link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
+    <!-- <link rel="stylesheet" href="bower_components/jquery.form-styler/jquery.formstyler.css" /> -->
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -54,7 +55,7 @@
                         <!-- [+] .logo-text -->
                         <div class="logo-text">
                             <span class="logo-name"> <img src="images/company-name.png" height="18" width="240" alt=""> </span>
-                            <span class="slogan">на земле и под землей</span>                            
+                            <span class="slogan">на земле и под землей</span>
                         </div>
                         <!-- [-] .logo-text -->
 
@@ -79,7 +80,7 @@
                             
                             <span class="icon icon-phone"></span>
                             <span class="phone">8 (495) 625 63 45</span>
-                            <a href="" class="feedback">Обратная связь</a>
+                            <a href="" class="more-info">Обратная связь</a>
 
                         </div>
                         <!-- [-] .contacts__item -->
@@ -133,7 +134,7 @@
                     <!-- [-] .nav -->
 
                     <!-- [+] .search -->
-                    <div class="search">
+                    <div class="search to-right">
                         
                         <form action="#">
                             <button type="submit" class="search-button icon icon-search"></button>
@@ -187,11 +188,11 @@
                         <!-- [+] .content-wrapper -->
                         <div class="content-wrapper">
                             
-                            <div class="img-wrapper to-left"><iframe width="410" height="281" src="https://www.youtube.com/embed/HLUX0y4EptA" frameborder="0" allowfullscreen></iframe></div>
+                            <div class="img-wrapper to-left"><iframe width="410" height="281" src="https://www.youtube.com/embed/HLUX0y4EptA" allowfullscreen></iframe></div>
 
-                            <p class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam modi alias consectetur veritatis ullam minima cupiditate iure vel perspiciatis porro voluptatem, maxime eaque soluta itaque sapiente quae totam laborum autem?</p>
-                            <p class="text-block">Dolores est totam laborum, sit mollitia saepe numquam asperiores aut fuga placeat fugiat aliquam itaque suscipit maxime, pariatur debitis, natus facere soluta laudantium harum? Laudantium eum qui praesentium delectus veritatis.</p>
-                            <p class="text-block">Ipsa ab, dolore impedit consequuntur minima facere sint, maxime omnis enim sapiente repudiandae fugit eum! Debitis tempore, ducimus quis asperiores, atque facilis veritatis, rerum dolor voluptas quidem cumque soluta quod.</p>
+                            <div class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam modi alias consectetur veritatis ullam minima cupiditate iure vel perspiciatis porro voluptatem, maxime eaque soluta itaque sapiente quae totam laborum autem?</div>
+                            <div class="text-block">Dolores est totam laborum, sit mollitia saepe numquam asperiores aut fuga placeat fugiat aliquam itaque suscipit maxime, pariatur debitis, natus facere soluta laudantium harum? Laudantium eum qui praesentium delectus veritatis.</div>
+                            <div class="text-block">Ipsa ab, dolore impedit consequuntur minima facere sint, maxime omnis enim sapiente repudiandae fugit eum! Debitis tempore, ducimus quis asperiores, atque facilis veritatis, rerum dolor voluptas quidem cumque soluta quod.</div>
 
                             <a href="">Lorem ipsum.</a>
 
@@ -324,6 +325,96 @@
                     </div>
                     <!-- [-] .nav-arrows -->
 
+                    <a href="" class="read-more">Читать далее<span class="icon icon-arrow-sm"></span></a>
+
+
+                    <!-- [+] .forms -->
+                    <div class="forms">
+                        
+                        <form action="#">
+                            
+                            <div class="input-wrapper">
+                                <input type="radio" id="radio-1" name="radio">
+                                <label for="radio-1">Радио кнопка</label>
+                            </div>
+
+                            <br>
+
+                            <div class="input-wrapper">
+                                <input type="radio" id="radio-2" name="radio">
+                                <label for="radio-2">Радио кнопка</label>
+                            </div>
+
+                            <br>
+
+                            <div class="input-wrapper">
+                                <input type="radio" id="radio-3" name="radio" disabled>
+                                <label for="radio-3">Радио кнопка</label>
+                            </div>
+
+                            <br>
+
+                            <div class="input-wrapper">
+                                <input type="checkbox" id="checkbox-1" name="checkbox">
+                                <label for="checkbox-1">Чекбокс</label>
+                            </div>
+
+                            <br>
+
+                            <div class="input-wrapper">
+                                <input type="checkbox" id="checkbox-2" name="checkbox">
+                                <label for="checkbox-2">Чекбокс</label>
+                            </div>
+
+                            <br>
+
+                            <div class="input-wrapper">
+                                <input type="checkbox" id="checkbox-3" name="checkbox" disabled>
+                                <label for="checkbox-3">Чекбокс</label>
+                            </div>
+
+                            <br>
+
+                            <select name="select" id="select-1" class="select" data-placeholder="Выберите город">
+                                <option></option>
+                                <option value="1">Город</option>
+                                <option value="2">Город</option>
+                                <option value="3">Город</option>
+                            </select>
+
+                            <div class="data-input-wrapper">
+                                <input type="text" class="data-input" id="input-1">
+                                <label for="input-1" class="data-input__placeholder">Имя<span>*</span></label>
+                            </div>
+                            
+                            <div class="data-input-wrapper">
+                                <input type="text" class="data-input error" id="input-2">
+                                <label for="input-2" class="data-input__placeholder">Имя<span>*</span></label>
+                            </div>
+
+                            <div class="data-input-wrapper">
+                                <input type="text" class="data-input disabled" disabled id="input-3">
+                                <label for="input-3" class="data-input__placeholder">Имя<span>*</span></label>
+                            </div>
+
+                            <textarea name="" id="textarea=1" cols="25" rows="4" class="text-input"></textarea>
+                            <textarea name="" id="textarea=2" cols="25" rows="4" class="text-input error"></textarea>
+                            <textarea name="" id="textarea=3" cols="25" rows="4" class="text-input disabled" disabled></textarea>
+
+
+                        </form>
+
+
+                        <div class="search">
+                            <form action="#">
+                                <button type="submit" class="search-button icon icon-search"></button>
+                                <input type="text" class="search-input" placeholder="поиск">
+                            </form>
+                        </div>
+
+                    </div>
+                    <!-- [-] .forms -->
+
                 </div>
                 <!-- [-] .page-content-inner -->
 
@@ -410,6 +501,7 @@
     <script src="bower_components/jquery-1.11.1/dist/jquery.js"></script>
     <script src="bower_components/bxSlider/dist/jquery.bxslider.js"></script>
     <script src="bower_components/bxSlider/dist/jquery.bxslider.min.js"></script>
+    <script src="bower_components/jquery.form-styler/jquery.formstyler.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

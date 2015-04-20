@@ -89,33 +89,8 @@
     height: 0;
     z-index: 10;
 
-    .slider-prev,
-    .slider-next {
-        position: absolute;
-        z-index: 10;
-        display: block;
-        width: 50px;
-        height: 50px;
-        background-color: #f1f1f6;
+    .nav-arrows {
         top: -40px;
-
-        & > .icon {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
-    }
-
-    .slider-prev {
-        border-right: 1px solid #e3e3ea;
         left: 605px;
-    }
-
-    .slider-next {
-        border-left: 1px solid #e3e3ea;
-        left: 655px;
     }
 }
