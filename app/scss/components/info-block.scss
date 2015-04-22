@@ -33,8 +33,10 @@
     }
 
     .block-list {
+
         &__header {
             top: -16px;
+
             & > span {
                 font-size: 20px;
                 color: #191921;
@@ -118,7 +120,7 @@
         .link-wrapper {
             text-align: right;
             display: block;
-            margin: 10px 0;
+            margin: 14px 0;
         }
 
         &-link {

@@ -80,7 +80,7 @@
                             
                             <span class="icon icon-phone"></span>
                             <span class="phone">8 (495) 625 63 45</span>
-                            <a href="" class="more-info">Обратная связь</a>
+                            <a href="" class="more-info feedback">Обратная связь</a>
 
                         </div>
                         <!-- [-] .contacts__item -->
@@ -138,7 +138,7 @@
                         
                         <form action="#">
                             <button type="submit" class="search-button icon icon-search"></button>
-                            <input type="text" class="search-input" placeholder="поиск">
+                            <input type="search" class="search-input" placeholder="поиск">
                         </form>
 
                     </div>
@@ -163,8 +163,8 @@
             <!-- [+] .container -->
             <div class="container">
 
-                <!-- [+] .page-content-inner -->
-                <div class="page-content-inner">
+                <!-- [+] .page-content__inner -->
+                <div class="page-content__inner">
                     
                     
                     <!-- [+] .crumbs -->
@@ -186,15 +186,13 @@
                         <h5 class="h5">Заголовок</h5>
 
                         <!-- [+] .content-wrapper -->
-                        <div class="content-wrapper">
+                        <div class="content-wrapper clearfix">
                             
                             <div class="img-wrapper to-left"><iframe width="410" height="281" src="https://www.youtube.com/embed/HLUX0y4EptA" allowfullscreen></iframe></div>
 
-                            <div class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam modi alias consectetur veritatis ullam minima cupiditate iure vel perspiciatis porro voluptatem, maxime eaque soluta itaque sapiente quae totam laborum autem?</div>
+                            <div class="text-block no-m-top">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam modi alias consectetur veritatis ullam minima cupiditate iure vel perspiciatis porro voluptatem, maxime eaque soluta itaque sapiente quae totam laborum autem?</div>
                             <div class="text-block">Dolores est totam laborum, sit mollitia saepe numquam asperiores aut fuga placeat fugiat aliquam itaque suscipit maxime, pariatur debitis, natus facere soluta laudantium harum? Laudantium eum qui praesentium delectus veritatis.</div>
                             <div class="text-block">Ipsa ab, dolore impedit consequuntur minima facere sint, maxime omnis enim sapiente repudiandae fugit eum! Debitis tempore, ducimus quis asperiores, atque facilis veritatis, rerum dolor voluptas quidem cumque soluta quod.</div>
-
-                            <a href="">Lorem ipsum.</a>
 
                         </div>
                         <!-- [-] .content-wrapper -->
@@ -205,16 +203,14 @@
 
                     <!-- [+] .table0 -->
                     <table class="table0">
-                        <thead>
-                            <tr>
-                                <td>№</td>
-                                <td>Столбец 1</td>
-                                <td>Столбец 2</td>
-                                <td>Столбец 3</td>
-                                <td>Столбец 4</td>
-                            </tr>
-                        </thead>
                         <tbody>
+                            <tr>
+                                <th>№</th>
+                                <th>Столбец 1</th>
+                                <th>Столбец 2</th>
+                                <th>Столбец 3</th>
+                                <th>Столбец 4</th>
+                            </tr>
                             <tr>
                                 <td>1</td>
                                 <td>Столбец 1</td>
@@ -242,16 +238,14 @@
 
                     <!-- [+] .table1 -->
                     <table class="table1">
-                        <thead>
-                            <tr>
-                                <td>№</td>
-                                <td>Столбец 1</td>
-                                <td>Столбец 2</td>
-                                <td>Столбец 3</td>
-                                <td>Столбец 4</td>
-                            </tr>
-                        </thead>
                         <tbody>
+                            <tr>
+                                <th>№</th>
+                                <th>Столбец 1</th>
+                                <th>Столбец 2</th>
+                                <th>Столбец 3</th>
+                                <th>Столбец 4</th>
+                            </tr>
                             <tr>
                                 <td>1</td>
                                 <td>Столбец 1</td>
@@ -279,16 +273,14 @@
 
                     <!-- [+] .table -->
                     <table class="table">
-                        <thead>
-                            <tr>
-                                <td>№</td>
-                                <td>Столбец 1</td>
-                                <td>Столбец 2</td>
-                                <td>Столбец 3</td>
-                                <td>Столбец 4</td>
-                            </tr>
-                        </thead>
                         <tbody>
+                            <tr>
+                                <th>№</th>
+                                <th>Столбец 1</th>
+                                <th>Столбец 2</th>
+                                <th>Столбец 3</th>
+                                <th>Столбец 4</th>
+                            </tr>
                             <tr>
                                 <td>1</td>
                                 <td>Столбец 1</td>
@@ -383,23 +375,20 @@
                             </select>
 
                             <div class="data-input-wrapper">
-                                <input type="text" class="data-input" id="input-1">
-                                <label for="input-1" class="data-input__placeholder">Имя<span>*</span></label>
+                                <input type="text" placeholder="Имя" class="data-input" id="input-1">
                             </div>
                             
                             <div class="data-input-wrapper">
-                                <input type="text" class="data-input error" id="input-2">
-                                <label for="input-2" class="data-input__placeholder">Имя<span>*</span></label>
+                                <input type="text" placeholder="Имя" class="data-input error" id="input-2">
                             </div>
 
                             <div class="data-input-wrapper">
-                                <input type="text" class="data-input disabled" disabled id="input-3">
-                                <label for="input-3" class="data-input__placeholder">Имя<span>*</span></label>
+                                <input type="text" placeholder="Имя" class="data-input disabled" disabled id="input-3">
                             </div>
 
-                            <textarea name="" id="textarea=1" cols="25" rows="4" class="text-input"></textarea>
-                            <textarea name="" id="textarea=2" cols="25" rows="4" class="text-input error"></textarea>
-                            <textarea name="" id="textarea=3" cols="25" rows="4" class="text-input disabled" disabled></textarea>
+                            <textarea name="" id="textarea=1" cols="25" rows="4"></textarea>
+                            <textarea name="" id="textarea=2" cols="25" rows="4" class="error"></textarea>
+                            <textarea name="" id="textarea=3" cols="25" rows="4" disabled></textarea>
 
 
                         </form>
@@ -408,7 +397,7 @@
                         <div class="search">
                             <form action="#">
                                 <button type="submit" class="search-button icon icon-search"></button>
-                                <input type="text" class="search-input" placeholder="поиск">
+                                <input type="search" class="search-input" placeholder="поиск">
                             </form>
                         </div>
 
@@ -416,7 +405,7 @@
                     <!-- [-] .forms -->
 
                 </div>
-                <!-- [-] .page-content-inner -->
+                <!-- [-] .page-content__inner -->
 
             </div>
             <!-- [-] .container -->

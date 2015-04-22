@@ -1,0 +1,64 @@
+.quote {
+    position: relative;
+    overflow: hidden;
+
+    &-inner {
+        padding: 40px;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__block {
+        margin: 26px 85px;
+        position: relative;
+
+        &:after,
+        &:before {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 30px;
+            width: 40px;
+            background-image: url('../images/quotes.png');
+            background-repeat: no-repeat;
+        }
+
+        &:before {
+            top: -5px;
+            left: -50px;
+        }
+
+        &:after {
+            transform: rotate(180deg);
+            bottom: 35px;
+            right: -55px;
+        }
+    }
+
+    &__text {
+        font-size: 30px;
+        font-family: 'PT Serif';
+        font-style: italic;
+        color: #fff;
+    }
+
+    &__author {
+        display: block;
+        font-size: 18px;
+        color: #fff;
+        margin-top: 20px;
+        box-sizing: border-box;
+        padding-right: 15px;
+    }
+}
+
+.quote-bg-wrapper {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+
+    img {
+        width: 100%;
+    }
+}

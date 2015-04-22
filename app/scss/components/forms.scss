@@ -176,7 +176,13 @@ label {
     margin: 10px 0;
 }
 
-.data-input {
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="url"],
+input[type="tel"] {
     min-width: 222px;
     box-sizing: border-box;
     display: inline-block;
@@ -186,30 +192,8 @@ label {
     color: #63686c;
     padding: 7.5px 10px;
 
-    &__placeholder {
-        display: inline-block;
-        position: absolute;
-        cursor: pointer;
-        box-sizing: border-box;
-        padding: 7.5px 10px;
-        top: 0;
-        left: 0;
-        font-size: 13px;
-        color: #63686c;
-        height: 100%;
-        width: 222px;
-
-        & > span {
-            color: #f00;
-        }
-    }
-
     &:focus {
         border-color: $orange;
-
-        & + label {
-            display: none;
-        }
     }
 
     &.error {
@@ -225,33 +209,6 @@ label {
         }
     }
 }
-
-
-.text-input {
-    min-width: 222px;
-    box-sizing: border-box;
-    display: inline-block;
-    border: 1px solid #999da0;
-    border-radius: 1px;
-    font-size: 13px;
-    color: #63686c;
-    padding: 7.5px 10px;
-    resize: none;
-
-    &:focus {
-        border-color: $orange;
-    }
-
-    &.error {
-        border-color: #ff5858;
-    }
-
-    &.disabled {
-        background-color: #e2e2e2;
-        border-color: #e2e2e2;
-    }
-}
-
 
 .data-input::-webkit-input-placeholder,
 .text-input::-webkit-input-placeholder {color:#63686c;}

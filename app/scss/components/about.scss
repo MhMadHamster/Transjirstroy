@@ -36,6 +36,11 @@
     margin: 15px 0;
     text-align: center;
 
+    &--nope {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     &__corner {
         position: absolute;
         bottom: -4px;

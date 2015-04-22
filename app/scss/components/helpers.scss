@@ -1,0 +1,48 @@
+.no-m-top {
+    margin-top: 0;
+}
+
+.no-m-bot {
+    margin-bottom: 0;
+}
+
+.clearfix {
+    &:before,
+    &:after {
+        content: " "; // 1
+        display: table; // 2
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.turn180 {
+    transform: rotate(180deg);
+}
+
+.italic {
+    font-style: italic;
+}
+
+.to-left {
+    float: left;
+
+    &.img-wrapper {
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+.to-right {
+    float: right;
+
+    &.img-wrapper {
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+.text-center { text-align: center; }

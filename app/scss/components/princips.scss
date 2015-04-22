@@ -1,0 +1,43 @@
+.princip-wrapper {
+    padding: 60px 0;
+    margin: 30px 0; 
+}
+
+.princip {
+    display: inline-block;
+    text-align: left;
+    margin: 10px 0;
+    vertical-align: top;
+
+    &--medium {
+        width: 460px;
+    }
+
+    &--large {
+        width: 100%;
+    }
+
+    & > .img-wrapper {
+        width: 115px;
+    }
+
+    &__header {
+        color: $orange;
+        box-sizing: border-box;
+    }
+
+    &__text {
+        padding-right: 15px;
+        box-sizing: border-box;
+        margin: 5px 0;
+        font-size: 13px;
+        font-family: 'PT Sans';
+        font-style: italic;
+        color: #81818b;
+    }
+}
+
+.block-list .princip .img-wrapper {
+    margin-left: 0;
+    margin-bottom: 10px;
+}

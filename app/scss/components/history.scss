@@ -1,0 +1,38 @@
+.history {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+    text-align: center;
+
+    &__inner {
+        padding: 0 40px;
+    }
+
+    &__block {
+        border-bottom: 1px solid #dfdfdf;
+        margin: 17px 0;
+        width: 100%;
+        position: relative;
+
+        &-year {
+            font-size: 16px;
+            text-align: center;
+            width: 110px;
+            padding: 10px 0;
+            font-weight: 800;
+            color: #fff;
+            background-color: $orange;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &:last-child {
+            border: none;
+        }
+
+        & > .text-block {
+            padding-left: 135px;
+        }
+    }
+}

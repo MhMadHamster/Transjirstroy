@@ -8,15 +8,17 @@
     text-align: center;
     font-size: 14px;
 
-    thead {
+    th {
         font-weight: bold;
     }
 
-    tr > td {
+    tr > td,
+    tr > th {
         padding: 10px 15px;
     }
 
-    tr > td:not(:first-child) {
+    tr > td:not(:first-child),
+    tr > th:not(:first-child) {
         width: 218px;
         box-sizing: border-box;
     }
@@ -24,7 +26,8 @@
 
 .table1 {
 
-    td {
+    td,
+    th {
         border: 1px solid #000;
         border-collapse: collapse;
     }
@@ -32,16 +35,17 @@
 
 .table {
 
-    thead > tr {
+    tr:first-child {
         background-color: $orange;
         color: #fefefe;
     }
 
-    tbody > tr:nth-child(2n+1) {
+    tbody > tr:nth-child(2n+2) {
         background-color: #f2f1f5;
     }
 
-    tr > td:not(:first-child) {
+    tr > td:not(:first-child),
+    tr > th:not(:first-child) {
         border-left: 1px solid rgba(0,0,0, .08);
     }
 }
