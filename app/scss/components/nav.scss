@@ -11,7 +11,7 @@
 
 .nav {
     float: left;
-    max-width: 780px;
+    max-width: 770px;
 
     .top-menu {
         margin: 0;
@@ -44,7 +44,7 @@
                     content: '';
                     display: block;
                     position: absolute;
-                    background-color: $black;
+                    background-color: transparent;
                     top: -3px;
                     left: 0;
                     width: 100%;

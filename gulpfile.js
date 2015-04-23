@@ -41,15 +41,6 @@ gulp.task('clean', function() {
           .pipe(clean());
 });
 
-// CSS
-gulp.task('css', function() {
-  gulp.src('app/css/*.css')
-    .pipe(concatCSS('styles.css'))
-    .pipe(prefix())
-    .pipe(minify())
-    .pipe(uncss());
-});
-
 // SCSS
 gulp.task('sass', function() {
   gulp.src('app/scss/styles.scss')
