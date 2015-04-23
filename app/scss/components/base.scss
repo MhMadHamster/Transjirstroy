@@ -3,7 +3,7 @@ body {
     padding: 0;
     background-color: $orange;
     font-family: 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
-    min-width: 1020px;
+    min-width: 980px;
 }
 
 .page-wrapper {
@@ -18,12 +18,12 @@ body {
   &__inner {
     width: 100%;
     box-sizing: border-box;
-    padding: 20px 40px;
+    padding: 0 20px 20px;
   }
 }
 
 .container {
-    width: 1020px;
+    width: 980px;
     margin: 0 auto;
 }
 

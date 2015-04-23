@@ -19,8 +19,8 @@
 
     .header-inner {
         width: 100%;
-        padding-left: 20px;
-        padding-right: 40px;
+        padding-left: 0px;
+        padding-right: 20px;
         box-sizing: border-box;
         position: relative;
         z-index: 2;
@@ -115,7 +115,6 @@
                 background: -o-linear-gradient(top,  rgba(255,203,0,1) 0%,rgba(255,169,0,1) 100%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
                 background: -ms-linear-gradient(top,  rgba(255,203,0,1) 0%,rgba(255,169,0,1) 100%,rgba(255,255,255,1) 100%); /* IE10+ */
                 background: linear-gradient(to bottom,  rgba(255,203,0,1) 0%,rgba(255,169,0,1) 100%,rgba(255,255,255,1) 100%); /* W3C */
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcb00', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
                 box-shadow: inset 0 1px 0 rgba($white, .28), 0 2px 3px rgba(0,0,0, .42);
             
                 &:hover {

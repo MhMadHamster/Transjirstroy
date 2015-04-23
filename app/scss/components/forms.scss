@@ -200,7 +200,7 @@ input[type="tel"] {
         border-color: #ff5858;
     }
 
-    &.disabled {
+    &:disabled {
         background-color: #e2e2e2;
         border-color: #e2e2e2;
 

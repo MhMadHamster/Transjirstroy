@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    var blockListHeaderHeight = $('.block-list__header').height;
+
     var slider = $('.promo-slider').bxSlider({
                         pager: false,
                         mode: 'fade',
@@ -55,6 +57,33 @@ $(document).ready(function() {
     $('.search-input').focusout(function() {
         $(this).attr('placeholder', 'поиск').closest('.search').removeClass('active');
         $(this).val('');
+    });
+
+
+    // Services
+    $('.service__popup').click(function(e) {
+        e.preventDefault();
+
+        var serviceObject = $(this).attr('href');
+
+        console.log(serviceObject);
+
+        if ($('.service-object__block').is(':animated')) {
+            clearInterval(wait);
+        };
+
+        if ($('.service-object__block.active').length) {
+            $('.service-object__block.active').removeClass('active').fadeOut(300, function() {
+                $(serviceObject).addClass('active').fadeIn(300);
+            })
+        } else {
+            $(serviceObject).addClass('active').fadeIn(300);
+        }
+    })
+
+    $('.js-popup').on('click', function(e) {
+        e.preventDefault();
+        $('.popup').bPopup();
     });
 
 })

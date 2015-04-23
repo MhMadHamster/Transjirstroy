@@ -1,0 +1,166 @@
+.service {
+    background-color: #f4f4f4;
+
+    &__inner {
+        position: relative;
+        padding: 20px 20px;
+    }
+
+    &__block {
+        float: left;
+        margin: 4px 5px;
+        position: relative;
+
+        &--medium {
+            width: 180px;
+            height: 176px;
+
+            & .service__text {
+                font-size: 12px;
+                font-family: 'Open Sans';
+                font-style: italic;
+                color: #15141b;
+                display: block;
+                padding: 10px 0px 0px;
+                box-sizing: border-box;
+                width: 84.7%;
+                display: block;
+                height: 50px;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+        }
+
+        &--large {
+            width: 359px;
+            height: 360px;
+
+            & .service__text {
+                font-size: 17px;
+                font-family: 'PT Sans';
+                font-weight: bold;
+                font-style: italic;
+                color: #15141b;
+                width: 85%;
+                display: block;
+                height: 50px;
+                line-height: 50px;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+        }
+
+        & > .img-wrapper {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            & > img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+
+        &:hover {
+
+            .service__popup {
+                height: 100%;
+
+                .service__text {
+                    padding-top: 0;
+                }
+
+                .service__arrow {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &__popup {
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: $orange;
+        text-align: center;
+        text-decoration: none;
+        transition: all .3s;
+        overflow: hidden;
+
+        .service__arrow {
+            position: absolute;
+            box-sizing: border-box;
+            display: none;
+            left: 0;
+            right: 0;
+            bottom: -20px;
+            margin: auto;
+            background-repeat: no-repeat;
+            background-image: url('../images/service-arrow.png');
+            width: 21px;
+            height: 21px;
+        }
+    }
+}
+
+
+.service-object {
+    position: relative;
+    background-color: #fff;
+
+    &__inner {
+        box-sizing: border-box;
+        width: 100%;
+        position: relative;
+        padding: 20px 20px;
+    }
+
+    &__block {
+        margin: 20px 0;
+        display: none;
+
+        .block-list {
+            padding-top: 15px;
+            padding-bottom: 25px;
+            width: 539px;
+
+            &__header {
+                top: -16px;
+            }
+        }
+
+        .block-links {
+            width: 380px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            padding-left: 10px;
+
+            &__list {
+                margin-top: 55px;
+                padding: 0;
+                list-style: none;
+
+                &-item {
+                    margin: 10px 0;
+
+                    & > a{
+                        font-size: 14px;
+                        font-weight: 800;
+                        color: $orange;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -12,9 +12,7 @@
 
     <!-- build:css css/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bxSlider/dist/jquery.bxslider.css" />
     <link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
-    <!-- <link rel="stylesheet" href="bower_components/jquery.form-styler/jquery.formstyler.css" /> -->
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -80,7 +78,7 @@
                             
                             <span class="icon icon-phone"></span>
                             <span class="phone">8 (495) 625 63 45</span>
-                            <a href="" class="more-info feedback">Обратная связь</a>
+                            <a href="" class="more-info feedback js-popup">Обратная связь</a>
 
                         </div>
                         <!-- [-] .contacts__item -->
@@ -375,15 +373,15 @@
                             </select>
 
                             <div class="data-input-wrapper">
-                                <input type="text" placeholder="Имя" class="data-input" id="input-1">
+                                <input type="text" placeholder="Имя" id="input-1">
                             </div>
                             
                             <div class="data-input-wrapper">
-                                <input type="text" placeholder="Имя" class="data-input error" id="input-2">
+                                <input type="text" placeholder="Имя" class="error" id="input-2">
                             </div>
 
                             <div class="data-input-wrapper">
-                                <input type="text" placeholder="Имя" class="data-input disabled" disabled id="input-3">
+                                <input type="text" placeholder="Имя" disabled id="input-3">
                             </div>
 
                             <textarea name="" id="textarea=1" cols="25" rows="4"></textarea>
@@ -478,19 +476,29 @@
         </footer>
         <!-- [-] .footer -->
 
-
-
     </div>
     <!-- [-] .page-wrapper page-styles -->
 
 
+    <!-- [+] .popup -->
+    <div class="popup">
+    
+        <span class="popup-text">Popup</span>
+
+        <span class="popup-close b-close">
+            <span>X</span>
+        </span>
+    
+    </div>
+    <!-- [-] .popup -->
+
+
     <!-- build:js js/vendor.js -->
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/jquery-1.11.1/dist/jquery.js"></script>
-    <script src="bower_components/bxSlider/dist/jquery.bxslider.js"></script>
+    <script src="bower_components/jquery-1.11.1/dist/jquery.min.js"></script>
     <script src="bower_components/bxSlider/dist/jquery.bxslider.min.js"></script>
-    <script src="bower_components/jquery.form-styler/jquery.formstyler.js"></script>
+    <script src="bower_components/jquery.form-styler/jquery.formstyler.min.js"></script>
+    <script src="bower_components/bpopup/jquery.bpopup.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
