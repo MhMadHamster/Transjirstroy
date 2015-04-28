@@ -26,6 +26,12 @@
             margin: 0 1px;
             z-index: 2;
 
+            &:hover {
+                & > ul {
+                    display: block;
+                }
+            }
+
             & > a {
                 font-size: 14px;
                 text-transform: uppercase;
@@ -39,6 +45,7 @@
                 z-index: 2;
                 position: relative;
                 transition: all .3s;
+                letter-spacing: 0.7px;
 
                 &:after {
                     content: '';
@@ -57,6 +64,28 @@
 
                     &:after {
                         background-color: $orange;
+                    }
+                }
+            }
+
+            & > ul {
+                position: absolute;
+                display: none;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                width: 150px;
+                background-color: #fff;
+
+                & > li {
+
+                    a {
+                        padding: 10px 15px;
+                        display: block;
+
+                        &:hover {
+                            background-color: #f1f1f6;
+                        }
                     }
                 }
             }

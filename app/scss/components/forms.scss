@@ -191,6 +191,7 @@ input[type="tel"] {
     font-size: 13px;
     color: #63686c;
     padding: 7.5px 10px;
+    resize: none;
 
     &:focus {
         border-color: $orange;

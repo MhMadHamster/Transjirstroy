@@ -61,23 +61,36 @@ $(document).ready(function() {
 
 
     // Services
-    $('.service__popup').click(function(e) {
+    $('.service__block').on('click', '.service__popup', function(e) {
         e.preventDefault();
+
+        if ($(this).closest('.clicked').length) {
+            return false;
+        }
 
         var serviceObject = $(this).attr('href');
 
-        console.log(serviceObject);
+        var medium = $(this).closest('.service__block--medium');
+        var large = medium.siblings('.service__block--large');
+
+        var medium_html = $(this).closest(medium).html();
+        var large_html = $(this).closest(medium).siblings('.service__block--large').html();
 
         if ($('.service-object__block').is(':animated')) {
             clearInterval(wait);
         };
 
         if ($('.service-object__block.active').length) {
+            large.html(medium_html);
             $('.service-object__block.active').removeClass('active').fadeOut(300, function() {
                 $(serviceObject).addClass('active').fadeIn(300);
+                medium.html(large_html);
             })
         } else {
             $(serviceObject).addClass('active').fadeIn(300);
+            $('.service__block--large').addClass('clicked');
+            medium.html(large_html);
+            large.html(medium_html);
         }
     })
 

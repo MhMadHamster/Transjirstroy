@@ -44,6 +44,7 @@ gulp.task('clean', function() {
 // SCSS
 gulp.task('sass', function() {
   gulp.src('app/scss/styles.scss')
+    .pipe(plumber())
     .pipe(sass({errorLogToConsole: true}))
     .pipe(prefix())
     .pipe(gulp.dest('app/css/'))

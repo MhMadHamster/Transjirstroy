@@ -5,6 +5,14 @@
     z-index: 5;
     position: relative;
 
+    & > .block-list {
+        padding: 25px 30px;
+    }
+
+    & .text-block {
+        margin: 25px 0;
+    }
+
     &-inner {
         box-sizing: border-box;
         padding: 0 20px;

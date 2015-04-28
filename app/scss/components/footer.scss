@@ -1,3 +1,4 @@
+// Подвал BEGIN
 .footer {
     background-color: #15141b;
 
@@ -11,6 +12,7 @@
         float: left;
         max-width: 400px;
         margin: 40px 0;
+        word-spacing: 2px;
 
         .copy-owner {
             font-size: 14px;
@@ -23,10 +25,11 @@
             font-size: 12px;
             color: #696773;
             display: block;
+            margin-top: 2px;
 
             & > a {
                 font-size: 12px;
-                text-decoration: underline;
+                font-family: 'Open Sans';
             }
         }
     }
@@ -36,3 +39,4 @@
         float: right;
     }
 }
+// Подвал END

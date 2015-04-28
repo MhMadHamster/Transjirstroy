@@ -1,16 +1,18 @@
+// Цитата BEGIN
 .quote {
     position: relative;
     overflow: hidden;
 
     &-inner {
         padding: 40px 20px;
+        padding-bottom: 45px;
         text-align: center;
         position: relative;
         z-index: 2;
     }
 
     &__block {
-        margin: 26px 85px;
+        margin: 43px 85px 12px;
         position: relative;
 
         &:after,
@@ -25,14 +27,14 @@
         }
 
         &:before {
-            top: -5px;
-            left: -50px;
+            top: -6px;
+            left: -48px;
         }
 
         &:after {
             transform: rotate(180deg);
-            bottom: 35px;
-            right: -55px;
+            bottom: 33px;
+            right: -54px;
         }
     }
 
@@ -41,15 +43,16 @@
         font-family: 'PT Serif';
         font-style: italic;
         color: #fff;
+        line-height: 38px;
     }
 
     &__author {
         display: block;
         font-size: 18px;
         color: #fff;
-        margin-top: 20px;
+        margin-top: 18px;
         box-sizing: border-box;
-        padding-right: 15px;
+        padding-right: 14px;
     }
 }
 
@@ -63,3 +66,4 @@
         width: 100%;
     }
 }
+// Цитата END

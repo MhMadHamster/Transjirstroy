@@ -1,3 +1,4 @@
+// Направление деятельности СТРАНИЦА BEGIN
 .service {
     background-color: #f4f4f4;
 
@@ -38,6 +39,7 @@
         &--large {
             width: 359px;
             height: 360px;
+            margin-left: 0;
 
             & .service__text {
                 font-size: 17px;
@@ -64,12 +66,14 @@
             overflow: hidden;
 
             & > img {
+                width: 100%;
+                height: 100%;
                 max-width: 100%;
                 max-height: 100%;
             }
         }
 
-        &:hover {
+        &:not(.clicked):hover {
 
             .service__popup {
                 height: 100%;
@@ -83,6 +87,10 @@
                 }
             }
         }
+    }
+
+    &__block.clicked .service__popup:hover {
+        cursor: default;
     }
 
     &__popup {
@@ -126,7 +134,7 @@
     }
 
     &__block {
-        margin: 20px 0;
+        margin: 4px 0;
         display: none;
 
         .block-list {
@@ -141,26 +149,31 @@
 
         .block-links {
             width: 380px;
-            margin: 5px 0;
+            margin: 3px 0;
             box-sizing: border-box;
-            padding-left: 10px;
+            padding-left: 9px;
 
             &__list {
-                margin-top: 55px;
+                margin-top: 59px;
                 padding: 0;
                 list-style: none;
 
                 &-item {
-                    margin: 10px 0;
+                    margin: 13px 0;
 
-                    & > a{
+                    & > a {
                         font-size: 14px;
                         font-weight: 800;
                         color: $orange;
                         font-style: italic;
+                        font-family: 'Open Sans';
                     }
                 }
+            }
+
+            & > .more-info {
             }
         }
     }
 }
+// Направление деятельности СТРАНИЦА END

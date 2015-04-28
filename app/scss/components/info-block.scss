@@ -1,3 +1,4 @@
+// Инфо блок BEGIN
 .info-block {
     background-color: #fefefe;
     position: relative;
@@ -6,7 +7,7 @@
     &-inner {
         box-sizing: border-box;
         width: 100%;
-        padding: 40px 20px;
+        padding: 35px 20px;
         position: relative;
         z-index: 2;
     }
@@ -53,6 +54,7 @@
         }
     }
 
+    // Новости BEGIN
     .news {
         float: right;
         width: 400px;
@@ -75,7 +77,7 @@
         }
 
         &__item {
-            margin: 25px 0;
+            margin: 21px 0 25px;
             border-bottom: 1px solid #dedee3;
 
             &:last-child {
@@ -84,6 +86,8 @@
         }
 
         &-date {
+            position: relative;
+            top: 5px;
             vertical-align: top;
             display: inline-block;
             background-color: $orange;
@@ -100,6 +104,7 @@
         }
 
         &-head {
+            margin-top: 2px;
             text-align: left;
             display: inline-block;
             font-size: 16px;
@@ -108,19 +113,21 @@
             max-width: 310px;
             font-family: 'PT Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
             box-sizing: border-box;
-            padding-left: 7px;
+            padding-left: 3px;
+            word-spacing: -0.4px;
         }
 
         .text-block {
-            margin: 10px 0;
+            margin: 12px 0 8px;
             box-sizing: border-box;
             padding-left: 3px;
+            word-spacing: -0.4px;
         }
 
         .link-wrapper {
             text-align: right;
             display: block;
-            margin: 14px 0;
+            margin: 8px 0 19px;
         }
 
         &-link {
@@ -144,12 +151,14 @@
             vertical-align: middle;
             position: relative;
             top: -2px;
-            margin-left: 5px;
+            margin-left: 3px;
         }
     }
+    // Новости END
 
 }
 
+// Лица BEGIN
 .personal-list {
     margin-top: 30px;
     position: relative;
@@ -159,16 +168,24 @@
         text-align: left;
         margin-bottom: 10px;
 
+        & > .text-block {
+            margin-top: 15px;
+        }
+
         &.active {
             display: block;
         }
 
         .img-wrapper {
+            margin-top: 6px;
             float: left;
-            margin-right: 20px;
-            margin-bottom: 5px;
+            margin-right: 17px;
             position: relative;
-            min-height: 200px;
+            height: 213px;
+
+            & > img {
+                height: 100%;
+            }
 
             .persona-info {
                 position: absolute;
@@ -183,7 +200,6 @@
                     font-weight: 600;
                     font-style: italic;
                     display: inline-block;
-                    margin: 5px 0;
                     color: #191921;
                     box-sizing: border-box;
                     padding: 0 10px;
@@ -248,3 +264,6 @@
         }
     }
 }
+// Лица END
+
+// Инфо блок END
